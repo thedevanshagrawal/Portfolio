@@ -150,3 +150,72 @@ footer {
 .Contact-details span {
   font-size: 15px;
 }
+
+@media screen and (max-width: 1200px) {
+  .firstSection {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hr {
+    width: 94vw;
+    margin: 0 12px;
+  }
+
+  .secondSection .experience {
+    height: 80vh;
+    width: 2px;
+    display: grid;
+  }
+
+  .vertical {
+    width: 128px;
+    height: 1px;
+    margin: 23px 4px;
+  }
+
+  .vertical img {
+    position: relative;
+    right: 25px;
+    bottom: 10px;
+  }
+
+  .vertical .vertical-title {
+    margin: -25px 135px;
+  }
+
+  .third-hr {
+    margin: 265px 0 0 10px;
+    width: 92vw;
+  }
+
+  .thirdSection {
+    margin: 0 -78px;
+  }
+
+  .education-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .education-desc {
+    margin: 5px 30px;
+  }
+
+  .last-section {
+    height: 45vh;
+  }
+
+  .footer {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
