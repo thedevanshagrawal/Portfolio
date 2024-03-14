@@ -71,10 +71,6 @@ a {
   height: 78vh;
 }
 
-main hr {
-  width: 80vw;
-  margin: 0 100px;
-}
 
 
 .education-box {
@@ -103,6 +99,14 @@ main hr {
   display: flex;
   margin: 56px 0;
 }
+
+.sepration {
+  height: 2px;
+  width: 96%;
+  background-color: white;
+  margin: auto;
+}
+
 
 .vertical {
   height: 93px;
@@ -157,15 +161,18 @@ footer {
     flex-wrap: wrap;
   }
 
-  .hr {
-    width: 94vw;
-    margin: 0 12px;
-  }
-
   .secondSection .experience {
     height: 80vh;
     width: 2px;
     display: grid;
+  }
+
+  .secondSectionSepration {
+    margin-top: 56vh;
+  }
+
+  .right-section img {
+    height: 35vh;
   }
 
   .vertical {
@@ -190,7 +197,7 @@ footer {
   }
 
   .thirdSection {
-    margin: 0 -78px;
+    margin: 38px -78px 0 -78px;
   }
 
   .education-box {
@@ -198,8 +205,12 @@ footer {
     flex-direction: column;
   }
 
+  .education-title {
+    width: 90vw;
+  }
+
   .education-desc {
-    margin: 5px 30px;
+    margin: 12px 30px;
   }
 
   .last-section {
@@ -217,5 +228,17 @@ footer {
   nav {
     display: flex;
     flex-direction: column;
+    width: 125vw;
+  }
+
+  .firstSection {
+    text-align: center;
+    padding-left: 112px;
+
+  }
+
+  .sepration {
+    width: 111%;
+    margin-left: 20px;
   }
 }
