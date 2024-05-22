@@ -1,43 +1,54 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: rgb(0, 0, 33);
   color: white;
-  font-family: poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 nav {
   background-color: rgb(18, 18, 62);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
   height: 80px;
 }
 
-.left {
+nav .left {
   font-size: 1.5rem;
+  font-weight: 600;
 }
 
-.right ul {
+nav .right ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
   list-style: none;
   gap: 20px;
-  cursor: pointer;
+}
+
+nav .right ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+nav .right ul li a:hover {
+  color: rgb(170, 107, 228);
 }
 
 .firstSection {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  padding: 40px 0;
 }
 
 .left-section {
-  padding: 40px 0px;
   font-size: 2.5rem;
 }
 
@@ -60,185 +71,167 @@ a {
   border: 2px solid #fff;
   border-radius: 8px;
   font-size: 20px;
-  padding: 12px;
+  padding: 12px 20px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.right-section {
-  margin: 0 105px;
+.left-section .btn1:hover {
+  background-color: rgb(170, 107, 228);
+  transform: translateY(-2px);
 }
 
 .right-section img {
-  height: 78vh;
+  max-height: 78vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-
-.education-box {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px 0;
+main hr {
+  width: 80%;
+  margin: 40px auto;
+  border: 0;
+  border-top: 2px solid white;
 }
 
 .secondSection {
+  text-align: center;
   padding: 30px 100px;
-  max-width: 80vw;
-  margin: auto;
-  height: 52vh;
 }
-
-
 
 .secondSection h2 {
   font-size: 32px;
+  margin-bottom: 20px;
 }
 
 .secondSection .experience {
-  height: 2px;
-  width: 80vw;
-  background: white;
   display: flex;
-  margin: 56px 0;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-
-.sepration {
-  height: 2px;
-  width: 96%;
-  background-color: white;
-  margin: auto;
-}
-
 
 .vertical {
-  height: 93px;
-  width: 1px;
-  background-color: white;
-  margin: 0 6vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
 }
 
-
 .vertical img {
-  height: 20px;
-  position: relative;
-  bottom: 22px;
-  right: 8px;
+  height: 40px;
+  margin-bottom: 10px;
 }
 
 .vertical .vertical-title {
   font-size: 20px;
-  margin-top: 74px;
 }
 
 .thirdSection {
   padding: 30px 100px;
-  max-width: 80vw;
-  margin: auto;
-  height: 30vh;
+  text-align: center;
+}
+
+.thirdSection h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.education-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.education-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.education-desc {
+  font-size: 18px;
 }
 
 footer {
   background-color: #0e0e1a;
+  padding: 40px 0;
+  text-align: center;
 }
 
 .footer {
-  padding: 40px 0;
-  font-size: 22px;
   display: flex;
   justify-content: space-around;
-  text-align: center;
+  align-items: center;
 }
 
 .Contact-details img {
   height: 20px;
+  margin-right: 10px;
 }
 
-.Contact-details span {
-  font-size: 15px;
+.Contact-details a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
 }
 
-@media screen and (max-width: 1200px) {
+.Contact-details a:hover {
+  color: rgb(170, 107, 228);
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
   .firstSection {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
   }
 
-  .secondSection .experience {
-    height: 80vh;
-    width: 2px;
-    display: grid;
-  }
-
-  .secondSectionSepration {
-    margin-top: 56vh;
+  .left-section {
+    font-size: 2rem;
   }
 
   .right-section img {
-    height: 35vh;
+    max-height: 50vh;
   }
 
-  .vertical {
-    width: 128px;
-    height: 1px;
-    margin: 23px 4px;
-  }
-
-  .vertical img {
-    position: relative;
-    right: 25px;
-    bottom: 10px;
-  }
-
-  .vertical .vertical-title {
-    margin: -25px 135px;
-  }
-
-  .third-hr {
-    margin: 265px 0 0 10px;
-    width: 92vw;
-  }
-
-  .thirdSection {
-    margin: 38px -78px 0 -78px;
+  .secondSection, .thirdSection {
+    padding: 20px;
   }
 
   .education-box {
-    display: flex;
     flex-direction: column;
-  }
-
-  .education-title {
-    width: 90vw;
-  }
-
-  .education-desc {
-    margin: 12px 30px;
-  }
-
-  .last-section {
-    height: 45vh;
+    align-items: flex-start;
   }
 
   .footer {
-    font-size: 18px;
-    display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
   }
 }
 
-@media screen and (max-width: 700px) {
-  nav {
-    display: flex;
+@media (max-width: 480px) {
+  .left-section {
+    font-size: 1.5rem;
+  }
+
+  .buttons {
     flex-direction: column;
-    width: 125vw;
+    gap: 10px;
   }
 
-  .firstSection {
-    text-align: center;
-    padding-left: 112px;
-
+  .education-title, .education-desc {
+    font-size: 16px;
   }
 
-  .sepration {
-    width: 111%;
-    margin-left: 20px;
+  .Contact-details a {
+    font-size: 16px;
   }
 }
