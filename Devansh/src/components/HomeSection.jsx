@@ -103,9 +103,13 @@ function HomeSection() {
                 <span>❖ Temple – 12 Jyotirlinga and 4 Dham Temple</span>
               </div>
             </Link>
-            <div className="education-box">
-              <div className="education-title">❖ Tourism website</div>
-            </div>
+
+            <Link
+              to="https://copypaste-knhm.onrender.com/"
+              className="education-box"
+            >
+              <div className="education-title">❖ Copy Paste Website</div>
+            </Link>
             <Link
               to="https://studywithus.vercel.app/"
               className="education-box"
